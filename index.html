@@ -145,10 +145,6 @@
     letter-spacing: -0.05em;
     user-select: none;
   }
-  .hero-stats {
-    position: absolute; right: 6vw; bottom: 10%;
-    display: flex; gap: 2rem;
-  }
   .stat { text-align: center; }
   .stat-num {
     font-family: 'Lora', serif;
@@ -318,7 +314,6 @@
   /* RESPONSIVE */
   @media (max-width: 900px) {
     .hero-accent { display: none; }
-    .hero-stats { position: static; margin-top: 3rem; }
     .hero { flex-direction: column; align-items: flex-start; padding-bottom: 3rem; }
   }
   @media (max-width: 700px) {
@@ -365,11 +360,6 @@
     <div class="hero-cta">
       <a href="#projects" class="btn-primary">View my work</a>
       <a href="#contact" class="btn-outline">Get in touch</a>
-    </div>
-    <div class="hero-stats">
-      <div class="stat"><span class="stat-num">3+</span><span class="stat-label">Cloud Platforms</span></div>
-      <div class="stat"><span class="stat-num">Cum Laude</span><span class="stat-label">Candidate</span></div>
-      <div class="stat"><span class="stat-num">DOST</span><span class="stat-label">Scholar</span></div>
     </div>
   </div>
   <div class="hero-accent">
