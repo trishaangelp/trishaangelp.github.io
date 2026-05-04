@@ -145,17 +145,7 @@
     letter-spacing: -0.05em;
     user-select: none;
   }
-  .stat { text-align: center; }
-  .stat-num {
-    font-family: 'Lora', serif;
-    font-size: 1.6rem;
-    color: var(--terracotta);
-    display: block;
-  }
-  .stat-label {
-    font-size: 11px; color: var(--text-muted);
-    text-transform: uppercase; letter-spacing: 0.06em;
-  }
+
 
   /* SECTIONS */
   section { padding: 6rem 6vw; }
@@ -314,6 +304,7 @@
   /* RESPONSIVE */
   @media (max-width: 900px) {
     .hero-accent { display: none; }
+    .hero-stats { position: static; margin-top: 3rem; }
     .hero { flex-direction: column; align-items: flex-start; padding-bottom: 3rem; }
   }
   @media (max-width: 700px) {
@@ -361,8 +352,9 @@
       <a href="#projects" class="btn-primary">View my work</a>
       <a href="#contact" class="btn-outline">Get in touch</a>
     </div>
+
   </div>
-  <div class="hero-accent">
+  <div class="hero-accent" style="position:absolute; right:5vw; top:50%; transform:translateY(-50%);">
     <span class="hero-accent-inner">T</span>
   </div>
 </section>
@@ -384,15 +376,29 @@
         <span class="fun-tag">🍳 Cooking</span>
       </div>
     </div>
-    <div class="about-visual fade-in">
-      <div style="font-family: 'Lora', serif; font-size: 1rem; color: var(--text-mid); margin-bottom: 0.5rem;">Core strengths</div>
-      <div class="skill-row"><span class="skill-label">Data Engineering</span><div class="skill-bar"><div class="skill-fill" style="width:88%"></div></div></div>
-      <div class="skill-row"><span class="skill-label">Python & ML</span><div class="skill-bar"><div class="skill-fill" style="width:82%"></div></div></div>
-      <div class="skill-row"><span class="skill-label">Cloud (GCP/AWS/Azure)</span><div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div></div>
-      <div class="skill-row"><span class="skill-label">Web Development</span><div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div></div>
-      <div class="skill-row"><span class="skill-label">Security & GRC</span><div class="skill-bar"><div class="skill-fill" style="width:65%"></div></div></div>
-      <div style="margin-top:1rem;padding-top:1rem;border-top:1px solid rgba(138,120,112,0.15);">
-        <p style="font-size:12px;color:var(--text-muted);">Also fluent in Tableau, Figma, Docker, PostgreSQL</p>
+    <div class="fade-in" style="display:flex;flex-direction:column;gap:2rem;">
+      <div>
+        <div style="font-size:12px;font-weight:500;text-transform:uppercase;letter-spacing:0.08em;color:var(--sage);margin-bottom:0.8rem;">Technical Skills</div>
+        <div class="skill-chips">
+          <span class="chip">Python</span><span class="chip">Java</span>
+          <span class="chip">JavaScript</span><span class="chip">C++</span>
+          <span class="chip">SQL / PostgreSQL</span><span class="chip">HTML / CSS</span>
+          <span class="chip">React</span><span class="chip">Django</span>
+          <span class="chip">FastAPI</span><span class="chip">GCP BigQuery</span>
+          <span class="chip">Azure ADF</span><span class="chip">AWS</span>
+          <span class="chip">Docker</span><span class="chip">Power BI</span>
+          <span class="chip">Tableau</span><span class="chip">PyTorch</span>
+          <span class="chip">Figma</span><span class="chip">Photoshop</span>
+        </div>
+      </div>
+      <div>
+        <div style="font-size:12px;font-weight:500;text-transform:uppercase;letter-spacing:0.08em;color:var(--sage);margin-bottom:0.8rem;">Soft Skills</div>
+        <div class="skill-chips">
+          <span class="chip">Time Management</span><span class="chip">Adaptability</span>
+          <span class="chip">Attention to Detail</span><span class="chip">Communication</span>
+          <span class="chip">Problem-solving</span><span class="chip">Creativity</span>
+          <span class="chip">Resilience</span><span class="chip">Team Collaboration</span>
+        </div>
       </div>
     </div>
   </div>
@@ -408,8 +414,8 @@
       <div class="exp-dot" style="background:#e8ede6;">🌿</div>
       <div>
         <div class="exp-title">Data Engineering Associate</div>
-        <div class="exp-company">Kyndryl Philippines Inc.</div>
-        <div class="exp-date">June 2025 – Present</div>
+        <div class="exp-company">Various / Ongoing</div>
+        <div class="exp-date">2024 – Present</div>
         <div class="exp-desc">Built and maintained data pipelines on GCP BigQuery and Azure ADF. Created stored procedures and Power BI dashboards for reporting. Automated SharePoint-to-Blob container file transfers. Involved in AI engineering and REST API integration work.</div>
         <div class="exp-tags">
           <span class="exp-tag">GCP BigQuery</span><span class="exp-tag">Azure ADF</span>
@@ -459,6 +465,7 @@
         <span class="stack-tag">GoPhish</span><span class="stack-tag">Dashboard</span>
         <span class="stack-tag">Security Awareness</span>
       </div>
+      <span class="project-link">View on GitHub →</span>
     </a>
     <div class="project-card coming-soon fade-in" style="border-style:dashed;">
       <div class="project-icon" style="background:var(--terracotta-light);">✦</div>
@@ -529,7 +536,7 @@
       <a class="contact-link" href="mailto:trishaangel.millena@gmail.com">✉ Email me</a>
       <a class="contact-link" href="https://linkedin.com/in/trisha-millena" target="_blank">LinkedIn</a>
       <!-- UPDATE THIS LINK once your GitHub is live -->
-      <a class="contact-link" href="https://github.com/trishaangelp" target="_blank">GitHub</a>
+      <a class="contact-link" href="https://github.com/trishamillena" target="_blank">GitHub</a>
     </div>
   </div>
 </section>
